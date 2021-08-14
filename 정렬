@@ -1,0 +1,16 @@
+// ### array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하기
+![2](https://user-images.githubusercontent.com/87289383/129449246-2269be8a-e8a4-4168-aa59-e0dae08c18ae.JPG)
+
+/*
+#### 풀이) map, slice
+function solution(array, commands) {
+   return commands.map(v=> {
+     return array.slice(v[0]-1,v[1]).sort((a,b)=>a-b).slice(v[2]-1,v[2])[0];
+   })
+}
+*/
+
+/*
+#### 풀이) map(([i,j,k])=> , slice
+var solution = (a,b) => b.map(([i,j,k])=> a.slice(i-1,j).sort((a,b)=>a-b)[k-1])
+*/
