@@ -2,6 +2,21 @@
 ![image](https://user-images.githubusercontent.com/87289383/129449775-bee7da5a-6022-48ec-a9d1-a7f4be45a82d.png)
 
 #### 풀이)
+```javascript
+function solution(price, money, count) {
+    var totalFee=0;
+    var answer;
+    if(0<price<=2500 && 1<= money<=1000000000 && 1<=count<=2500) {
+        for(count;count>0;count--) {
+            totalFee += count * price
+            }
+        (totalFee-money)>0 ? answer=totalFee-money : answer=0;
+    }
+    return answer;
+}
+```
+
+#### 풀이)
 - Array.from({length:count})
 - map((e,idx)=>
 - Array.of(str).reduce((acc,idx)=>
