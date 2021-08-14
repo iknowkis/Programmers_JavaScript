@@ -39,8 +39,10 @@ function solution(price,money,count) {
 const solution = (..._) => { return Math.max(_[0]*_[2]*++_[2]/2-_[1],0); }
 
 #### 풀이)
-- 가우스 공식
+- (count+1)/2 // 가우스 공식
+```javascript
 function solution(price, money, count) {
     const tmp = price * count * (count + 1) / 2 - money;
     return tmp > 0 ? tmp : 0;
 }
+```
