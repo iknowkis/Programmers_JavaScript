@@ -6,12 +6,10 @@
 function solution(price, money, count) {
     var totalFee=0;
     var answer;
-    if(0<price<=2500 && 1<= money<=1000000000 && 1<=count<=2500) {
-        for(count;count>0;count--) {
-            totalFee += count * price
-            }
-        (totalFee-money)>0 ? answer=totalFee-money : answer=0;
+    for(count;count>0;count--) {
+        totalFee += count * price
     }
+    totalFee-money > 0 ? answer = totalFee-money : answer=0;
     return answer;
 }
 ```
