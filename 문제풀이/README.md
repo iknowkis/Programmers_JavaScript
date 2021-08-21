@@ -12,13 +12,18 @@
 .pop()
 .substring()
 .substr()
+.replace(/a/ig,'b')
 
 .splice()
 .slice()
 'str'.repeat()
 
+- .fill("*",0,n.length-4)
+- .join('')
+
 .sort((a,b)=>a-b)
 Array.of(str).map((e,idx)=>
+
 ```
 
 ```javascript
@@ -40,6 +45,8 @@ participant.find((e, i) => {
         return e;
     }
 })
+
+- [...n]
 ```
 
 #### 구조분해할당
