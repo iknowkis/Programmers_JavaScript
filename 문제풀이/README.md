@@ -42,6 +42,7 @@ String.fromCharCode(num) // num 유니코드 to 문자
 - .join('')
 
 .sort((a,b)=>a-b)
+.sort(([a, b], [c, d]) => b - d);
 .reverse()
 Array.of(str).map((e,idx)=>
 Array(n).keys()
@@ -52,7 +53,8 @@ Array(n).keys()
 obj['k']
 
 < Set >
-new Set
+new Set(arr) // duplicator 제거
+[...new Set(arr)]
 arr.has(el)
 arr.delete(el)
 
