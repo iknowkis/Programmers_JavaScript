@@ -4,6 +4,7 @@
 .reduce((acc,v)=>
 .reduceRight()
 .filter((v,k) =>
+arr1.filter(v => arr2.includes(v))
 
 .forEach((e, i, arr) =>
 
@@ -23,12 +24,20 @@ delete arr[el]
 .pop()
 .substring()
 .substr()
-.replace(/a/ig,'b')
+
+s.replace(/a/ig,'b')
+s.replace(new RegExp(a, 'g'), 'a')
+s.replace(/^$/, 'a') // null이라면
+s.replace(/^\.|\.$/g, '') // 제일 앞과 제일 끝 체크
+s.replace(/^(.)$/, "$1$1$1")replace(/^(.)(.)$/, "$1$2$2"); // 길이가 3이 아니라면 끝자리를 붙이기
+
+s.match(/p/ig)
+s.match(/^.{0,14}[^.]/)[0] // 길이가 16이상이면 15까지 자르고 끝이 .라면 제거하기
+
 .split('p')
 .splice()
 .slice()
 'str'.repeat()
-.match(/p/ig)
 
 arr.indexOf(el)
 arr.indexOf('str',len)
@@ -65,7 +74,12 @@ s1[n].localeCompare(s2[n]) // 인덱스로 정렬
 ```
 
 ```javascript
+.padStart(n,0) // n 길이를 만족하도록 앞의 빈 자리 채우기
+str.padEnd(1, 'a')
+
 while (p.length)
+while(true) {}
+
 
 new Date()
 
@@ -74,7 +88,7 @@ Math.max
 Math.min
 Math.floor
 Math.abs
-Math.ceil
+Math.ceil((100 - a)/s[i]) // 올림
 Math.sqrt(num) // 제곱근
 Math.pow(num,num) // 제곱
 
@@ -91,6 +105,7 @@ return regex.test(s);
 s.replace(/([a-z])|([A-Z])/g
 
 String(n).length==a?b:solution(n,a+1,b+=String(n)[a]*1) // 재귀
+solution(n, x + 1) // 재귀함수
 ```
 
 #### 구조분해할당
