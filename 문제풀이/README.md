@@ -33,6 +33,8 @@ s.replace(/^(.)$/, "$1$1$1")replace(/^(.)(.)$/, "$1$2$2"); // 길이가 3이 아
 
 s.match(/p/ig)
 s.match(/^.{0,14}[^.]/)[0] // 길이가 16이상이면 15까지 자르고 끝이 .라면 제거하기
+s.match(/\d.?\D/g) // 숫자와 숫자 사이 구분
+s.match(/(^\d{1,})(S|D|T)(\*|#)?/) // 24S* 와 같은 숫자+문자+옵션 잘라서 배열로 출력
 
 .split('p')
 .splice()
@@ -61,6 +63,10 @@ Array(n).keys()
 {v,k} // {v: PHP, k: 35}
 obj['k']
 
+options = { '*': 2, '#': -1, undefined: 1 };
+options['*']
+options[split[3]]
+
 < Set >
 new Set(arr) // duplicator 제거
 [...new Set(arr)]
@@ -80,6 +86,7 @@ str.padEnd(1, 'a')
 while (p.length)
 while(true) {}
 
+loop:{ if() break loop }
 
 new Date()
 
