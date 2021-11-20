@@ -42,6 +42,7 @@ function solution(dart, _=0, answer= [0]) {
 - `options['*']`
 - `options[split[3]]`
 - `.match(/\d.?\D/g)`
+- `s.match(/(^\d{1,})(S|D|T)(\*|#)?/)`
 ```javascript
 function solution(dartResult) {
     const bonus = { 'S': 1, 'D': 2, 'T': 3 },
